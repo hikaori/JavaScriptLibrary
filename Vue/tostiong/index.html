@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js"></script>
+  </head>
+  <body onload="initial();">
+    <h1>Vue.js</h1>
+    <div id="msg">
+      <p>{{message|json}}</p>
+      <input type="text" v-model="text1">
+      <input type="button" v-on:click="doAction" value="click">
+    </div>
+  </body>
+</html>
