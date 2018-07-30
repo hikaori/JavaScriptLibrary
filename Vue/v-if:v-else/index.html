@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js"></script>
+  </head>
+  <body onload="initial();">
+    <h1>Vue.js</h1>
+    <div id="msg">
+      <p v-if="flg">メッセージの表示を操作します。</p>
+      <!-- v-ifは値がtrueなら表示。falseの場合に代わりに何かを表示させたい場合 v-else を併用する -->
+      <p v-else>[ *非表示です ]</p>
+      <div>
+        <input type="checkbox" id="ck" v-model="flg">
+        <label for="ck">表示</label>
+      </div>
+    </div>
+  </body>
+</html>

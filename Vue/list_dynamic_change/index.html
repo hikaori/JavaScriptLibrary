@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js"></script>
+  </head>
+  <body onload="initial();">
+    <h1>Vue.js</h1>
+    <div id="msg">
+      <ol>
+        <li v-for="obj in data">
+          {{ obj }}
+        <li>
+      </ol>
+      <hr>
+      <select size="5" multiple v-model="data">
+        <option>Windows</option>
+        <option>mac</option>
+        <option>Linux</option>
+        <option>Android</option>
+        <option>iOS</option>
+      </select>
+    </div>
+  </body>
+</html>

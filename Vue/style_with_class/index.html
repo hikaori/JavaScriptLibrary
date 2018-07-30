@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js"></script>
+  </head>
+  <body onload="initial();">
+    <h1>Vue.js</h1>
+    <p id="msg" v-bind:class="{'a':isA ,'b':isB}"
+      v-on:click="change();">クラスを操作します。
+    </p>
+    
+  </body>
+  <style>
+  body{
+    color:#999;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 150%;
+    }
+    h1{
+    font-size: 24pt;
+    }
+    p{
+    font-size: 18pt;
+    }
+    .a{
+    color:red;
+    background: white;
+    }
+    .b{
+    color: white;
+    }
+  </style>
+</html>
