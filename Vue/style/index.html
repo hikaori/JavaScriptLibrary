@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js"></script>
+  </head>
+  <body onload="initial();">
+    <h1>Vue.js</h1>
+    <div id="msg">
+    <p v-bind:style="{'color':selF,'background':selB}"
+      v-on:click="change();">クラスを操作します。
+    </p>
+
+    <p>
+      <select v-model="selF">
+        <option>white</option>
+        <option>black</option>
+        <option>red</option>
+        <option>blue</option>
+        <option>green</option>
+      </select>
+      <select v-model="selB">
+        <option>white</option>
+        <option>black</option>
+        <option>red</option>
+        <option>blue</option>
+        <option>green</option>
+      </select>
+    </p>
+  </body>
+
+  <style>
+      body{
+  color:#999;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 150%;
+    }
+    h1{
+    font-size: 24pt;
+    }
+    p{
+    font-size: 18pt;
+    }
+    .a{
+    color:red;
+    background: white;
+    }
+    .b{
+    color: white;
+    background: blue;
+    }
+  </style>
+</html>

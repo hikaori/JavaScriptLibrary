@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="main.js"></script>
+  </head>
+
+  <template id="my-template">
+    <table>
+      <tr v-for="obj in items.split(',')">
+        <td style="border:1px solid #ccc; padding:0px 10px">
+          {{ obj }}
+        </td>
+      </tr>
+    </table>
+  </template>
+
+
+  <body onload="initial();">
+    <h1>Vue.js</h1>
+    <div id="msg">
+      <my-component items="one,two,three"></my-component>
+    </div>
+  </body>
+</html>
